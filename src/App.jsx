@@ -3,10 +3,10 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div>
-        <h1 className="taviraj-regular text-center text-6xl">
-          Hello Shopping Cart!
-        </h1>
+      <div className="flex justify-evenly bg-amber-300">
+        <a href="">Home</a>
+        <a href="">Shop</a>
+        <a href="">Cart</a>
       </div>
     </>
   );
