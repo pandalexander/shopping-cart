@@ -1,4 +1,5 @@
 import "./App.css";
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <a href="">Shop</a>
         <a href="">Cart</a>
       </div>
+      <Home />
     </>
   );
 }
