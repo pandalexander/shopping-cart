@@ -110,6 +110,19 @@
   font-style: italic;
 }
 
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 40px;
+  --spacing-7: 48px;
+  --spacing-8: 56px;
+  --spacing-9: 64px;
+  --spacing-10: 72px;
+}
+
 * {
   /* .taviraj-regular  */
   font-family: "Taviraj", serif;
@@ -117,6 +130,6 @@
   font-style: normal;
 }
 
-body {
-  padding: 5px;
+h1 {
+  font-size: var(--spacing-8);
 }

@@ -1,22 +1,23 @@
 import "./App.css";
-import Home from "./components/Home";
-import Shop from "./components/Shop";
-import Cart from "./components/Cart";
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div
-        className="flex justify-evenly bg-amber-300"
-        data-testid="header-menu"
-      >
-        <a href="">Home</a>
-        <a href="">Shop</a>
-        <a href="">Cart</a>
+      <div className="min-h-screen flex flex-col">
+        <div
+          className="flex justify-evenly p-spacing-2"
+          data-testid="header-menu"
+        >
+          <Link to="home">Home</Link>
+          <Link to="shop">Shop</Link>
+          <Link to="cart">Cart</Link>
+        </div>
+
+        <div className="flex flex-col flex-1">
+          <Outlet />
+        </div>
       </div>
-      <Home />
-      <Shop />
-      <Cart />
     </>
   );
 }
