@@ -1,5 +1,6 @@
 import "./App.css";
 import Home from "./components/Home";
+import Shop from "./components/Shop";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <a href="">Cart</a>
       </div>
       <Home />
+      <Shop />
     </>
   );
 }
